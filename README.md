@@ -139,12 +139,12 @@ scalable web applications, AI-powered solutions, and cross-platform mobile apps.
 ## 📊 GitHub Statistics
 
 <p align="center">
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=pawanlambole&show_icons=true&theme=tokyonight&hide_border=true&count_private=true"/>
-<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=pawanlambole&theme=tokyonight&hide_border=true"/>
+<img height="175" src="https://github-readme-stats.vercel.app/api?username=pawanlambole&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&border_radius=12&icon_color=7B68EE&title_color=4F8EF7&text_color=c9d1d9&bg_color=0d1117&rank_icon=github"/>
+<img height="175" src="https://github-readme-streak-stats.herokuapp.com/?user=pawanlambole&theme=tokyonight&hide_border=true&border_radius=12&background=0d1117&ring=7B68EE&fire=FF6FD8&currStreakLabel=4F8EF7"/>
 </p>
 
 <p align="center">
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pawanlambole&layout=compact&theme=tokyonight&hide_border=true"/>
+<img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pawanlambole&layout=compact&theme=tokyonight&hide_border=true&border_radius=12&bg_color=0d1117&title_color=4F8EF7&langs_count=10"/>
 </p>
 
 <br>
@@ -152,11 +152,18 @@ scalable web applications, AI-powered solutions, and cross-platform mobile apps.
 <!-- ========================= CONTRIBUTION GRAPH ========================= -->
 ## 📈 Contribution Graph
 
+<!-- Animated contribution snake — full-year graph "eaten" by a snake, regenerated daily via GitHub Action -->
 <p align="center">
 
-[![Pawan's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=pawanlambole&theme=tokyo-night&hide_border=true)](https://github.com/pawanlambole)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pawanlambole/pawanlambole/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pawanlambole/pawanlambole/output/github-contribution-grid-snake.svg" />
+  <img alt="Animated snake eating Pawan's full-year contribution graph" src="https://raw.githubusercontent.com/pawanlambole/pawanlambole/output/github-contribution-grid-snake.svg" width="100%"/>
+</picture>
 
 </p>
+
+> 🐍 **One-time setup needed for the animated snake above** — see the note at the bottom of this file for the 2-minute GitHub Action setup that generates it automatically every day.
 
 <br>
 
@@ -184,6 +191,57 @@ scalable web applications, AI-powered solutions, and cross-platform mobile apps.
 <p align="center">
 <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight"/>
 </p>
+
+<br>
+
+<details>
+<summary>🐍 <b>Setup note: enabling the animated snake contribution graph</b></summary>
+
+<br>
+
+The animated snake near the Contribution Graph section pulls from a file your own GitHub Actions workflow generates — it won't render until you do this once:
+
+1. In your **`pawanlambole/pawanlambole`** profile repo, create `.github/workflows/snake.yml` with:
+
+```yaml
+name: Generate Snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Platane/snk@v3
+        id: snake-gif
+        with:
+          github_user_name: pawanlambole
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+2. Commit and push it — the action runs immediately on push, then daily at midnight to keep the snake current.
+3. It writes the SVGs to an `output` branch, which is exactly what the `<picture>` tag in the Contribution Graph section above points to.
+
+No changes needed to this README once the workflow is in place — the images will just start rendering.
+
+</details>
 
 <br>
 
