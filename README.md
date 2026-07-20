@@ -57,7 +57,7 @@
 
 </div>
 
-<br>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:4F8EF7,50:7B68EE,100:FF6FD8&height=3&animation=twinkling"/>
 
 <!-- ========================= ABOUT ========================= -->
 ## 💫 About Me
@@ -74,7 +74,7 @@ scalable web applications, AI-powered solutions, and cross-platform mobile apps.
 ⚡ Goal: Become an AI Software Engineer
 ```
 
-<br>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:4F8EF7,50:7B68EE,100:FF6FD8&height=3&animation=twinkling"/>
 
 <!-- ========================= QUICK INFO ========================= -->
 ## 🚀 Quick Info
@@ -110,7 +110,7 @@ scalable web applications, AI-powered solutions, and cross-platform mobile apps.
 </tr>
 </table>
 
-<br>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:4F8EF7,50:7B68EE,100:FF6FD8&height=3&animation=twinkling"/>
 
 <!-- ========================= TECH STACK ========================= -->
 ## 💻 Tech Stack
@@ -133,24 +133,35 @@ scalable web applications, AI-powered solutions, and cross-platform mobile apps.
 <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"/>
 </p>
 
-<br>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:4F8EF7,50:7B68EE,100:FF6FD8&height=3&animation=twinkling"/>
 
 <!-- ========================= GITHUB STATS ========================= -->
 ## 📊 GitHub Statistics
 
 <p align="center">
-<img height="175" src="https://github-readme-stats.vercel.app/api?username=pawanlambole&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&border_radius=12&icon_color=7B68EE&title_color=4F8EF7&text_color=c9d1d9&bg_color=0d1117&rank_icon=github"/>
+<img height="175" src="https://github-stats-extended.vercel.app/api?username=pawanlambole&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&border_radius=12&icon_color=7B68EE&title_color=4F8EF7&text_color=c9d1d9&bg_color=0d1117"/>
 <img height="175" src="https://github-readme-streak-stats.herokuapp.com/?user=pawanlambole&theme=tokyonight&hide_border=true&border_radius=12&background=0d1117&ring=7B68EE&fire=FF6FD8&currStreakLabel=4F8EF7"/>
 </p>
 
 <p align="center">
-<img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=pawanlambole&layout=compact&theme=tokyonight&hide_border=true&border_radius=12&bg_color=0d1117&title_color=4F8EF7&langs_count=10"/>
+<img height="175" src="https://github-stats-extended.vercel.app/api/top-langs?username=pawanlambole&layout=compact&theme=tokyonight&hide_border=true&border_radius=12&bg_color=0d1117&title_color=4F8EF7&langs_count=10"/>
 </p>
 
-<br>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:4F8EF7,50:7B68EE,100:FF6FD8&height=3&animation=twinkling"/>
 
 <!-- ========================= CONTRIBUTION GRAPH ========================= -->
 ## 📈 Contribution Graph
+
+<!-- 3D isometric contribution calendar with an animated radar sweep, regenerated daily via GitHub Action -->
+<p align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pawanlambole/pawanlambole/main/profile-3d-contrib/profile-night-rainbow.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pawanlambole/pawanlambole/main/profile-3d-contrib/profile-green-animate.svg" />
+  <img alt="Pawan's 3D animated contribution calendar" src="https://raw.githubusercontent.com/pawanlambole/pawanlambole/main/profile-3d-contrib/profile-night-rainbow.svg" width="100%"/>
+</picture>
+
+</p>
 
 <!-- Animated contribution snake — full-year graph "eaten" by a snake, regenerated daily via GitHub Action -->
 <p align="center">
@@ -163,49 +174,42 @@ scalable web applications, AI-powered solutions, and cross-platform mobile apps.
 
 </p>
 
-> 🐍 **One-time setup needed for the animated snake above** — see the note at the bottom of this file for the 2-minute GitHub Action setup that generates it automatically every day.
-
-<br>
-
-<!-- ========================= TROPHIES ========================= -->
-## 🏆 GitHub Trophies
-
-<p align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=pawanlambole&theme=tokyonight&no-frame=true&margin-w=15&margin-h=15"/>
-</p>
-
-<br>
-
-<!-- ========================= TOP CONTRIBUTIONS ========================= -->
-## 🔥 Top Contributed Repository
-
-<p align="center">
-<img src="https://github-contributor-stats.vercel.app/api?username=pawanlambole&limit=5&theme=tokyonight&combine_all_yearly_contributions=true"/>
-</p>
-
-<br>
-
-<!-- ========================= QUOTE ========================= -->
-## ✍️ Random Dev Quote
-
-<p align="center">
-<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight"/>
-</p>
-
-<br>
-
 <details>
-<summary>🐍 <b>Setup note: enabling the animated snake contribution graph</b></summary>
+<summary>⚙️ <b>One-time GitHub Action setup for both animations above</b></summary>
 
 <br>
 
-The animated snake near the Contribution Graph section pulls from a file your own GitHub Actions workflow generates — it won't render until you do this once:
+Both images pull from files that only exist once your own GitHub Actions generate them — add **both** workflows below to your `pawanlambole/pawanlambole` repo (`.github/workflows/`), then push to `main`.
 
-1. In your **`pawanlambole/pawanlambole`** profile repo, create `.github/workflows/snake.yml` with:
+**1. 3D contribution calendar** → `.github/workflows/3d-contrib.yml`
+```yaml
+name: GitHub-Profile-3D-Contrib
+on:
+  schedule:
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+      - name: Commit & Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A .
+          if git commit -m "generated"; then git push; fi
+```
 
+**2. Contribution snake** → `.github/workflows/snake.yml`
 ```yaml
 name: Generate Snake
-
 on:
   schedule:
     - cron: "0 0 * * *"
@@ -213,7 +217,6 @@ on:
   push:
     branches:
       - main
-
 jobs:
   generate:
     permissions:
@@ -227,7 +230,6 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-
       - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
@@ -236,14 +238,29 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
-2. Commit and push it — the action runs immediately on push, then daily at midnight to keep the snake current.
-3. It writes the SVGs to an `output` branch, which is exactly what the `<picture>` tag in the Contribution Graph section above points to.
-
-No changes needed to this README once the workflow is in place — the images will just start rendering.
+Both run automatically on push, then daily. No further README edits needed once they're in place.
 
 </details>
 
-<br>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:4F8EF7,50:7B68EE,100:FF6FD8&height=3&animation=twinkling"/>
+
+<!-- ========================= TROPHIES ========================= -->
+## 🏆 GitHub Trophies
+
+<p align="center">
+<img src="https://github-trophies.vercel.app/?username=pawanlambole&theme=tokyonight&no-frame=true&margin-w=15&margin-h=15"/>
+</p>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:4F8EF7,50:7B68EE,100:FF6FD8&height=3&animation=twinkling"/>
+
+<!-- ========================= QUOTE ========================= -->
+## ✍️ Random Dev Quote
+
+<p align="center">
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight"/>
+</p>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:4F8EF7,50:7B68EE,100:FF6FD8&height=3&animation=twinkling"/>
 
 <!-- ========================= FOOTER ========================= -->
 ## 🤝 Let's Connect
