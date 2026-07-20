@@ -152,17 +152,6 @@ scalable web applications, AI-powered solutions, and cross-platform mobile apps.
 <!-- ========================= CONTRIBUTION GRAPH ========================= -->
 ## 📈 Contribution Graph
 
-<!-- 3D isometric contribution calendar with an animated radar sweep, regenerated daily via GitHub Action -->
-<p align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/pawanlambole/pawanlambole/main/profile-3d-contrib/profile-night-rainbow.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/pawanlambole/pawanlambole/main/profile-3d-contrib/profile-green-animate.svg" />
-  <img alt="Pawan's 3D animated contribution calendar" src="https://raw.githubusercontent.com/pawanlambole/pawanlambole/main/profile-3d-contrib/profile-night-rainbow.svg" width="100%"/>
-</picture>
-
-</p>
-
 <!-- Animated contribution snake — full-year graph "eaten" by a snake, regenerated daily via GitHub Action -->
 <p align="center">
 
